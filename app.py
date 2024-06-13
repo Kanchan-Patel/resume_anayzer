@@ -11,11 +11,11 @@ import matplotlib.pyplot as plt
 #load_dotenv()
 
 # Retrieve the Hugging Face API key from environment variables
-API_KEY = os.getenv("HUGGINGFACE_API_KEY")
+#API_KEY = os.getenv("HUGGINGFACE_API_KEY")
 
 def get_llama_response(input, text, jd):
     API_URL = "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"
-    headers = {"Authorization": f"Bearer st.secrets["resume_api"]"}
+    headers = {"Authorization": f"Bearer [YOUR_API_KEY]"}
 
     payload = {
         "inputs": input.format(text=text, jd=jd, response_variable="")
