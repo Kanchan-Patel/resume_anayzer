@@ -1,6 +1,7 @@
 streamlit
 requests
-json
 PyPDF2
-matplotlib
+json
+os
 scikit-learn
+matplotlib
