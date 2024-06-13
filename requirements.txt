@@ -1,0 +1,6 @@
+streamlit
+requests
+json
+PyPDF2
+matplotlib
+scikit-learn
