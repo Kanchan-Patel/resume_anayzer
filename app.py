@@ -15,7 +15,7 @@ API_KEY = os.getenv("HUGGINGFACE_API_KEY")
 
 def get_llama_response(input, text, jd):
     API_URL = "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"
-    headers = {"Authorization": f"Bearer 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"}
+    headers = {"Authorization": f"Bearer st.secrets["resume_api"]"}
 
     payload = {
         "inputs": input.format(text=text, jd=jd, response_variable="")
